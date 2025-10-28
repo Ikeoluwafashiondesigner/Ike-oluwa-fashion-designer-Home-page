@@ -1,26 +1,58 @@
-body{
-background-color: purple;
-font-family:Arial, sans-serif;
+
+
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f8f7; /* soft off-white */
+  color: #4a4a4a; /* dark gray for text */
+  margin: 0;
+  padding: 0;
 }
 
-h1{
-
-	
-color:white;
-text-allignment:center;
+header {
+  background-color: #222; /* dark background */
+  color: #f4e9e1; /* soft beige text */
+  padding: 25px 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
-h2{
-color:red;
-text-allignment:center
-text-size:19pts
+.gallery {
+  display: flex;
+  flex-direction: column; /* stack images vertically */
+  align-items: center;    /* center images horizontally */
+  gap: 20px;              /* space between images */
+  padding: 30px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 900px;
 }
 
-p{
-color: orange;
+
+
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
-p2{
-color:orange ;
+
+footer {
+  background-color: #222;
+  color: #f4e9e1;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-style: italic;
 }
-p3{
-color: orange ;
+
