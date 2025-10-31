@@ -1,54 +1,85 @@
+
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #fff;
-      color: #333;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .hero {
-      background: url('your-hero-image.jpg') center/cover no-repeat;
-      height: 400px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 36px;
-      font-weight: bold;
-      text-shadow: 2px 2px 4px #000;
-    }
-    .categories {
-      display: flex;
-      justify-content: space-around;
-      margin: 40px 0;
-    }
-    .category {
-      width: 30%;
-      text-align: center;
-    }
-    .category img {
-      width: 100%;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    .category img:hover {
-      transform: scale(1.05);
-    }
-    .category h3 {
-      margin: 10px 0 0;
-      font-size: 20px;
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
+  line-height: 1.6;
+  background-color: #fff8f2;
+  color: #333;
+}
+
+header {
+  background-color: #7e4c4f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#hero {
+  background-color: #ffe5dc;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#about, #categories, #order {
+  padding: 30px 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.category {
+  text-align: center;
+}
+
+.category img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form select, form textarea, form button {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #7e4c4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #7e4c4f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
