@@ -1,71 +1,77 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ike Stitches - Home</title>
+  <title>Ike Stitches | Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Ike Stitches</h1>
-    <p>“Where style meets tradition”</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#categories">Categories</a>
-      <a href="#order">Place Order</a>
-      <a href="https://wa.me/2348109174369" target="_blank">WhatsApp</a>
-      <a href="https://m.me/folashade.adepoju.aderemi" target="_blank">Messenger</a>
-    </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <img src="Logo.png" alt="Ike Stitches Logo" class="logo">
+      <h1 class="hero-title">Welcome to <span>Ike Stitches</span></h1>
+      <p class="subtitle">Where elegance meets creativity in every stitch ✨</p>
+      <a href="book-order.html" class="cta-btn">Book Your Order</a>
+    </div>
   </header>
 
-  <section id="hero">
-    <h2>Your Fashion, Your Identity</h2>
-    <p>Custom-made gowns and native wears for women</p>
-  </section>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="view-styles.html">View Styles</a>
+    <a href="book-order.html">Book Order</a>
+  </nav>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Ike Stitches is a fashion brand committed to bringing your dream styles to life. With creativity, skill, and attention to detail, we design and sew both modern and traditional outfits that reflect elegance and culture. We tailor every outfit to your measurements and preferences.</p>
-  </section>
+  <!-- Featured Styles Section -->
+  <section class="featured-styles">
+    <h2>Featured Styles</h2>
+    <p class="section-desc">Discover our latest trending designs, made with passion and precision.</p>
 
-  <section id="categories">
-    <h2>Categories</h2>
-    <div class="gallery">
-      <div class="category">
-        <h3>Gown</h3>
-        <img src="Gownnn1.png" alt="Gown Sample">
+    <div class="styles-grid">
+      <div class="style-card">
+        <img src="Gownnn1.png" alt="Gown 1">
+        <p>Gown 1 - ₦25,000 <span class="status available">Available</span></p>
       </div>
-      <div class="category">
-        <h3>Native</h3>
-        <img src="nativeway.png" alt="Native Sample">
+
+      <div class="style-card">
+        <img src="Gownnn2.png" alt="Gown 2">
+        <p>Gown 2 - ₦20,000 <span class="status Available">Available</span></p>
+      </div>
+
+      <div class="style-card">
+        <img src="Gownnn3.png" alt="Gown 3">
+        <p>Gown 3 - ₦30,000 <span class="status available">Available</span></p>
+      </div>
+
+      <div class="style-card">
+        <img src="Gownnn4.png" alt="Gown 4">
+        <p>Gown 4 - ₦20,000 <span class="status available">Available</span></p>
+      </div>
+
+      <div class="style-card">
+        <img src="GOWN.png" alt="GOWN">
+        <p>GOWN - ₦35,000 <span class="status available">Available</span></p>
+      </div>
+
+      <div class="style-card">
+        <img src="childrengown.png" alt="Children Gown">
+        <p>Children Gown - ₦20,000 <span class="status available">Available</span></p>
       </div>
     </div>
   </section>
 
-  <section id="order">
-    <h2>Place Your Order</h2>
-    <form action="https://formsubmit.co/adepojufolashadeapeke@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required><br>
-      <input type="email" name="email" placeholder="Your Email" required><br>
-      <input type="tel" name="phone" placeholder="Phone Number" required><br>
-      <select name="category" required>
-        <option value="">Select Category</option>
-        <option value="Gown">Gown</option>
-        <option value="Native">Native</option>
-      </select><br>
-[ <textarea name="description" placeholder="Describe your style or request" required></textarea><br>
-      <button type="submit">Send Order</button>
-      <input type="hidden" name="_captcha" value="false">
-    </form>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Ike Stitches. All rights reserved.</p>
+    <p>© 2025 <strong>Ike Stitches</strong>. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://wa.me/2348109174369" target="_blank">WhatsApp</a> |
+      <a href="https://m.me/folashade.adepoju.aderemi" target="_blank">Facebook Messenger</a>
+    </div>
   </footer>
 
 </body>
 </html>
-

@@ -1,57 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Book Order - Ike Stitches</title>
-<link rel="stylesheet" href="style.css" />
-<script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Order | Ike Stitches</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="header">
-  <img src="images/Logo.png" alt="Ike Stitches Logo" class="logo" />
-  <h1 class="hero-title">Book Your Order</h1>
-</header>
 
-<nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="styles.html">View Styles</a>
-  <a href="book-order.html" class="active">Book Order</a>
-</nav>
-
-<main class="order-section">
-  <form id="orderForm" action="https://formsubmit.co/adepojufolashadeapeke@gmail.com" method="POST">
-    <h2>Selected Styles</h2>
-    <div id="selectedStylesList">
-      <p>No styles selected yet.</p>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <img src="Logo.png" alt="Ike Stitches Logo" class="logo">
+      <h1 class="hero-title">Book Your <span>Order</span></h1>
+      <p class="subtitle">Fill in your details below to confirm your booking </p>
     </div>
+  </header>
 
-    <h2>Your Measurements (if custom order)</h2>
-    <label for="height">Height (cm):</label>
-    <input type="number" id="height" name="Height" min="50" max="250" required>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="view-styles.html">View Styles</a>
+    <a href="book-order.html" class="active">Book Order</a>
+  </nav>
 
-    <label for="bust">Bust (inches):</label>
-    <input type="number" id="bust" name="Bust" min="50" max="150" required>
+  <!-- Booking Form -->
+  <main>
+    <form id="orderForm"
+      action="https://formsubmit.co/adepojufolashadeapeke@gmail.com"
+      method="POST">
 
-    <label for="waist">Waist (inches):</label>
-    <input type="number" id="waist" name="Waist" min="40" max="130" required>
+      <div class="form-section">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your full name" required>
 
-    <label for="hips">Hips (inches):</label>
-    <input type="number" id="hips" name="Hips" min="50" max="160" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
 
-    <h3>Total Price: ₦<span id="totalPrice">0</span></h3>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Enter your WhatsApp number" required>
+      </div>
 
-    <input type="hidden" name="_next" value="thankyou.html" />
-    <input type="hidden" name="SelectedStyles" id="SelectedStylesInput" />
+      <div class="order-summary">
+        <h2>Your Selected Styles</h2>
+        <div id="selectedStyles"></div>
+      </div>
 
-    <button type="submit" id="submitOrder" disabled>Submit Order</button>
-  </form>
-</main>
+      <div class="price-section">
+        <h3>Total Price: <span id="totalPrice">0</span></h3>
+      </div>
 
-<footer>
-  <p>© 2025 Ike Stitches. All rights reserved.</p>
-</footer>
-<script src="book-order.js"></script>
+      <!-- Payment Instructions -->
+      <div class="payment-info">
+        <h3> Payment Information</h3>
+        <p>Please make payment to the account below after submitting your order:</p>
+
+        <div class="bank-details">
+          <p><strong>Bank Name:</strong> First Bank</p>
+          <p><strong>Account Name:</strong> Adepoju Folashade</p>
+          <p>
+            <strong>Account Number:</strong>
+            <span id="acctNum">3051775802</span>
+            <button type="button" id="copyBtn" class="copy-btn">Copy</button>
+          </p>
+        </div>
+
+        <p class="note">
+          After payment, kindly send a screenshot or confirmation message
+          to our WhatsApp:
+          <a href="https://wa.me/2348109174369" target="_blank">0810&nbsp;917&nbsp;4369</a>.
+        </p>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit" id="submitOrder" class="cta-btn">Submit Order</button>
+        <button type="reset" id="resetForm" class="reset-btn">Reset</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>� 2025 <strong>Ike Stitches</strong>. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://wa.me/2348109174369" target="_blank">WhatsApp</a> |
+      <a href="https://m.me/folashade.adepoju.aderemi" target="_blank">Facebook Messenger</a>
+    </div>
+  </footer>
+<script src="script.js"></script>
+
 </body>
 </html>

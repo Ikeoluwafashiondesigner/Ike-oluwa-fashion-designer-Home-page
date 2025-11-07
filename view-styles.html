@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Styles | Ike Stitches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <img src="Logo.png" alt="Ike Stitches Logo" class="logo">
+      <h1 class="hero-title">Our <span>Fashion Styles</span></h1>
+      <p class="subtitle">Long press or click on a design to select it for your order 👗</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="view-styles.html" class="active">View Styles</a>
+    <a href="book-order.html">Book Order</a>
+  </nav>
+
+  <!-- Styles Section -->
+  <main class="styles-section">
+    <div class="styles-grid" id="stylesGrid">
+
+      <div class="style-card" data-name="Gown 1" data-price="15000" data-available="true">
+        <img src="Gownnn1.png" alt="Gown 1">
+        <p>Gown 1 - ₦15,000 <span class="status available">Available</span></p>
+      </div>
+
+      <div class="style-card" data-name="Gown 2" data-price="18000" data-available="false">
+        <img src="Gownnn2.png" alt="Gown 2">
+        <p>Gown 2 - ₦18,000 <span class="status sold">Sold</span></p>
+      </div>
+
+      <div class="style-card" data-name="Gown 3" data-price="12000" data-available="true">
+        <img src="Gownnn3.png" alt="Gown 3">
+        <p>Gown 3 - ₦12,000 <span class="status available">Available</span></p>
+      </div>
+
+      <div class="style-card" data-name="Gown 4" data-price="20000" data-available="true">
+        <img src="Gownnn4.png" alt="Gown 4">
+        <p>Gown 4 - ₦20,000 <span class="status available">Available</span></p>
+      </div>
+
+      <div class="style-card" data-name="Gown 5" data-price="25000" data-available="true">
+        <img src="GOWN.png" alt="GOWN">
+        <p>Gown 5 - ₦25,000 <span class="status available">Available</span></p>
+      </div>
+
+      <div class="style-card" data-name="Children Gown" data-price="8000" data-available="true">
+        <img src="childrengown.png" alt="Children Gown">
+        <p>Children Gown - ₦8,000 <span class="status available">Available</span></p>
+      </div>
+    </div>
+
+    <!-- Popup message -->
+    <div id="popupMessage" class="popup-message">Added to Order ✅</div>
+
+    <div class="center-btn">
+      <button id="goToOrder" class="cta-btn" disabled>Proceed to Book Order</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 <strong>Ike Stitches</strong>. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://wa.me/2348109174369" target="_blank">WhatsApp</a> |
+      <a href="https://m.me/folashade.adepoju.aderemi" target="_blank">Facebook Messenger</a>
+    </div>
+  </footer>
+<script src="script.js"></script>
+  
+
+</body>
+</html>
