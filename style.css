@@ -1,0 +1,374 @@
+/* =========================
+   General Page Styling
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fffdf8;
+  background-image: url("fabric-bg.png"); /* optional faint texture */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================
+   Header & Hero Section
+========================= */
+.header {
+  background: linear-gradient(180deg, #000000, #222);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.hero-title {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.hero-title span {
+  color: #f9c349; /* Gold accent */
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-style: italic;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #f9c349;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #000;
+  color: #f9c349;
+  transform: scale(1.05);
+}
+
+/* =========================
+   Navigation Bar
+========================= */
+.navbar {
+  background-color: #111;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.navbar a {
+  color: #f9c349;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #fff;
+  border-bottom: 2px solid #f9c349;
+}
+
+/* =========================
+   Featured Styles Grid
+========================= */
+.featured-styles {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.featured-styles h2 {
+  color: #000;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.section-desc {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.styles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.style-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.style-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+}
+
+.style-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.status.available {
+  color: green;
+  font-weight: 600;
+}
+
+.status.sold {
+  color: red;
+  font-weight: 600;
+}
+
+/* =========================
+   About Page Styling
+========================= */
+.about-section {
+  padding: 60px 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h2 {
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* =========================
+   Popup Message (View Styles)
+========================= */
+.popup-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: #f9c349;
+  padding: 12px 25px;
+  border-radius: 30px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 100;
+  font-weight: 600;
+}
+
+/* =========================
+   Forms (Book Order)
+========================= */
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #000;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #f9c349;
+}
+
+.price-section {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.form-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reset-btn {
+  margin-left: 10px;
+  padding: 12px 20px;
+  border: 1px solid #000;
+  background: transparent;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #000;
+  color: #f9c349;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  text-align: center;
+  padding: 25px 10px;
+  background: #111;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #f9c349;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .styles-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .style-card {
+    width: 90%;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  /* --- Payment Info Box --- */
+.payment-info {
+  margin-top: 30px;
+  background: #fffdf5;
+  border: 1px solid #f9c349;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.payment-info h3 {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.payment-info p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.bank-details {
+  margin: 15px 0;
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 15px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+
+.bank-details p {
+  margin: 5px 0;
+  color: #111;
+  font-weight: 500;
+}
+
+.copy-btn {
+  margin-left: 10px;
+  padding: 4px 10px;
+  background: #f9c349;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: #000;
+  color: #f9c349;
+}
+
+.payment-info .note a {
+  color: #f9c349;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.payment-info .note a:hover {
+  text-decoration: underline;
+}
+}
